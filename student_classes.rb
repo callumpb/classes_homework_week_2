@@ -10,4 +10,8 @@ class Student
     return @name
   end
 
+  def student_cohort
+    return @cohort
+  end
+
 end
