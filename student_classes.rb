@@ -1,5 +1,5 @@
 class Student
-  #attr_accessor :input_name, :cohort
+  #attr_accessor :name, :cohort
 
   def initialize(input_name, input_cohort)
     @name = input_name
