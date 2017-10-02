@@ -22,6 +22,8 @@ class Student
     @cohort = input_cohort
   end
 
-
+  def speaks
+    return "I can talk"
+  end
 
 end
