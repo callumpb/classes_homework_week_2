@@ -18,4 +18,10 @@ class Student
     @name = input_name
   end
 
+  def set_student_cohort(input_cohort)
+    @cohort = input_cohort
+  end
+
+
+
 end
