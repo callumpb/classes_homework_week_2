@@ -15,4 +15,8 @@ class Team
     return @players
   end
 
+  def team_coach
+    return @coach
+  end
+  
 end

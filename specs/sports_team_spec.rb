@@ -18,4 +18,8 @@ end
     assert_equal(["David", "Jim"], @team.team_players)
   end
 
+  def test_get_team_coach
+    assert_equal("Alex Ferg", @team.team_coach)
+  end
+
 end
