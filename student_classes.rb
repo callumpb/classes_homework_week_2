@@ -26,4 +26,7 @@ class Student
     return "I can talk"
   end
 
+  def student_language(language)
+    return "I love #{language}"
+  end
 end
