@@ -22,4 +22,9 @@ end
     assert_equal("Alex Ferg", @team.team_coach)
   end
 
+  def test_set_coach
+    @team.set_team_coach("Dan")
+    assert_equal("Dan", @team.team_coach)
+  end
+
 end
