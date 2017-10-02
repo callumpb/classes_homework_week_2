@@ -31,8 +31,16 @@ end
 
   def test_new_player
     @team.new_player("John")
-    assert_equal(["David", "Jim", "John"], @team.players) 
+    assert_equal(["David", "Jim", "John"], @team.players)
   end
 
+
+  def test_player_in_array
+    @team.check_player("David")
+    assert_equal(["David", "Jim"], @team.players)
+  end
+
+#Add a method that takes in a string of a player's
+#name and checks to see if they are in the players array.
 
 end

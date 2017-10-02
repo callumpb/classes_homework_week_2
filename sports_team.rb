@@ -27,4 +27,8 @@ class Team
     @players << new_dude
   end
 
+  def check_player(player)
+    players.include?(player)
+  end
+
 end
