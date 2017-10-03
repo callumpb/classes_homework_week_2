@@ -7,7 +7,7 @@ class TestTeam < MiniTest::Test
 @team
 
 def setup
-  @team = Team.new("Manchester United", ["David", "Jim"], "Alex Ferg")
+  @team = Team.new("Manchester United", ["David", "Jim"], "Alex Ferg", 0)
 end
 
 
@@ -42,5 +42,23 @@ end
 
 #Add a method that takes in a string of a player's
 #name and checks to see if they are in the players array.
+
+  #def test_win_lose
+  #  @team.update_points(True)
+  #  assert_equal(True, @team.points)
+  #end
+
+  #def test_win
+  #  @team.update_points(3)
+  #  assert_equal(3, @team.points)
+  #end
+
+  def test_win_or_lose
+      @team.win_game("win")
+    assert_equal(3, @team.points)
+  end
+
+#Create a method that takes in whether the team has won or
+#lost and updates the points property for a win.
 
 end
